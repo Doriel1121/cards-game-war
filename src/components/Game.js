@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
 
 export default class Game extends Component {
 
@@ -108,8 +109,8 @@ export default class Game extends Component {
                 <div className="col-4"><h1 className="playertitle">{this.state.NameOfPlayer}</h1></div>
                 <div className="col-4"></div>
 
-                <div className="col-12"> <button className="btn btn-secondary" onClick={()=>this.revealCard(this.state.AllCards)} >Reveal</button></div>
-                <div className="col-12"><button className="btn btn-warning" onClick={this.whowin}>see who won</button></div>
+                <div className="col-12"> <button className="btn btn-secondary" onClick={()=>this.revealCard(this.state.AllCards)} >Reveal</button><br/><br/>
+                <button className="btn btn-warning" onClick={this.whowin}>See who won</button></div>
                 </div>
             </div>
         )

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class LogIn extends Component {
 
@@ -47,7 +47,7 @@ export default class LogIn extends Component {
     render() {
         return (
             <div className="logindiv">
-            <h1 className="wartitle">Ready for war</h1>
+            <h1 className="wartitle">Ready for <span style={{color:"red", fontWeight:"bolder"}}>war</span></h1>
             <input className="namelocation" onChange={this.NameOfPlayer} placeholder="Enter your name"/>
             <br/>
             <br/>

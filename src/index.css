@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("/grass.png");
-  background-size:50rem;
+  background-image: url("/board.jpg");
+  background-size:cover;
     background-position:top;
     background: cover;
     background-repeat: no-repeat;
@@ -26,6 +26,7 @@ code {
 }
 .wartitle{
   font-family: serif;
+  color: white;
 }
 .namelocation{
   border-radius: 5px;
@@ -38,7 +39,7 @@ code {
   position: relative;
   width: 10px;
   height: 150px;
-  border: 2px groove black;
+  border: 2px groove white;
   justify-content: center;
   flex-direction: column;
   display: flex;
@@ -51,12 +52,15 @@ code {
 .computertitle{
   font-size: 35px;
   text-align: right;
+  color: white;
 }
 .playertitle{
   font-size: 35px;
+  color: white;
   text-align: left;
 }
-.computerstyle{
+.playerstyle{
+  color: white;
   border-color: blue;
   border-style: double;
   width: 80px;
@@ -64,8 +68,10 @@ code {
   justify-content: center;
   flex-direction: column;
   display: flex;
+  margin-bottom: 0px;
 }
-.playerstyle{
+.computerstyle{
+  color: white;
   border-color: red;
   border-style: double;
   width: 80px;
@@ -73,8 +79,15 @@ code {
   justify-content: center;
   flex-direction: column;
   display: flex;
+  margin-bottom: 0px;
+
 }
 .finishStyle{
   position: relative;
-  top: 200px;
+  /* top: 200px; */
+  transform: translateY(50%);
 }
+
+
+
+
