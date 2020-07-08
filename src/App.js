@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import LogIn from './components/LogIn.js';
 import Game from './components/Game.js';
 import Finish from './components/Finish.js';
@@ -49,7 +49,7 @@ show = () =>{
   }else{
     return(
     <div>
-        <Finish winning={this.state.winner}/>
+        <Finish flagStatus={this.updateTheFlag} winning={this.state.winner}/>
       </div>
     )
   }

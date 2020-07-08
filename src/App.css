@@ -2,3 +2,43 @@
   text-align: center;
 }
 
+
+.card{
+  width: 200px;
+  height: 250px;
+  margin: 0px;
+}
+.mark{
+  background-color: transparent;
+}
+.wrapper{
+  background-color: transparent;
+}
+.card .content h1{
+  font-size: 0px;
+}
+.card:after{
+  background-color: transparent;
+}
+.card .mark{
+  background-color: transparent;
+}
+
+.card .content h2{
+font-size: 0px;
+}
+.card .content h2 sup {
+  font-size: 0px;
+}
+.card .mark.upside-down{
+  transform: rotate(0deg);
+}
+.dark{
+  color: transparent;
+}
+
+#cardd{
+  position: relative;
+  /* width: 10px; */
+  /* height: 150px; */
+}

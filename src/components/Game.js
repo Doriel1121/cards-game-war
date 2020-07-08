@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Card from 'react-playing-card';
+
 
 
 export default class Game extends Component {
@@ -9,6 +11,7 @@ export default class Game extends Component {
         this.state = {
             win:undefined,
             NameOfPlayer:props.Name,
+            // {card= "A" , symbol="S"}
              AllCards:[1,1,1,1,
                     2,2,2,2,
                     3,3,3,3,
@@ -37,10 +40,11 @@ export default class Game extends Component {
        var x,y,i
        let clicker=this.state.click
        if (this.state.AllCards[0]!==1&& this.state.AllCards[51]!==13&& clicker!==26) {
+        console.log("in");
         
         clicker++
-       this.setState({click:clicker})
-            this.setState({AllCards:all})
+       this.setState({click:clicker , AllCards:all})
+            // this.setState({AllCards:all})
             console.log(this.state.AllCards);
             var playerlocation=this.state.playerindex
             var complocation=this.state.computerindex
@@ -48,7 +52,7 @@ export default class Game extends Component {
                 playerlocation=playerlocation+1
                 this.setState({playerindex:playerlocation})
                 this.setState({computerRandomCard:this.state.AllCards[complocation]}) 
-                complocation=complocation-1
+                complocation=complocation-1                
                 this.setState({computerindex:complocation})          
                  console.log(this.state.playerindex);
                  if (this.state.playerrandomNuber>this.state.computerRandomCard) {
@@ -93,24 +97,26 @@ export default class Game extends Component {
     
     render() {
         return (
-            <div className="game">
+            <div className="container game">
                 <div className="row">
-                <div className="col-4"></div>
-                <div className="col-4"><h2 className="computertitle">Computer</h2></div>
-                <div className="col-4"></div>
-
-                <div className="col-4"></div>
-                <div id="cardd" className="col-1"> <h1 className="computerstyle">{this.state.computerRandomCard}</h1>  </div>
                 <div className="col-2"></div>
-                <div id="cardd" className="col-1"> <h1 className="playerstyle">{this.state.playerrandomNuber}</h1>  </div>
-                <div className="col-4"></div>
+                <div className="col-3"><h2 className="computertitle">Computer</h2></div>
+                <div className="col-7"></div>
                 
-                <div className="col-4"></div>
-                <div className="col-4"><h1 className="playertitle">{this.state.NameOfPlayer}</h1></div>
-                <div className="col-4"></div>
+                <div className="col-3"></div>
+                <div id="cardd" className="col-2"><Card rank={this.state.computerRandomCard} suit="S" /> </div>
+                <div className="col-7"></div>
 
-                <div className="col-12"> <button className="btn btn-secondary" onClick={()=>this.revealCard(this.state.AllCards)} >Reveal</button><br/><br/>
+                <div className="col-7"></div>
+                <div id="cardd" className="col-2"> <Card rank={this.state.playerrandomNuber} suit="S" />  </div>
+                <div className="col-2"><button className="btn btn-secondary" onClick={()=>this.revealCard(this.state.AllCards)} >Reveal</button><br/><br/>
                 <button className="btn btn-warning" onClick={this.whowin}>See who won</button></div>
+
+                <div className="col-7"></div>
+                <div className="col-3"><h1 className="playertitle">{this.state.NameOfPlayer}</h1></div>
+                <div className="col-2"></div>
+
+                <div className="col-12"> </div>
                 </div>
             </div>
         )

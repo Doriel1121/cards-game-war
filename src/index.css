@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("/board.jpg");
+  background-image: url("https://previews.123rf.com/images/tupungato/tupungato2002/tupungato200200102/139655685-vector-poker-background-card-game-casino-table-cloth-texture-.jpg");
   background-size:cover;
     background-position:top;
     background: cover;
@@ -35,29 +35,21 @@ code {
   position: relative;
   top: 120px;
 }
-#cardd{
-  position: relative;
-  width: 10px;
-  height: 150px;
-  border: 2px groove white;
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  border-radius: 5px;
 
-}
 .style{
   font-weight: bold;
 }
 .computertitle{
   font-size: 35px;
   text-align: right;
-  color: white;
+  color: blue;
+  margin-bottom: 30px;
 }
 .playertitle{
   font-size: 35px;
-  color: white;
   text-align: left;
+  color: red;
+  margin-top: 30px;
 }
 .playerstyle{
   color: white;
