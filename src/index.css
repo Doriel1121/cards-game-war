@@ -44,12 +44,15 @@ code {
   text-align: right;
   color: blue;
   margin-bottom: 30px;
+  -webkit-text-stroke: 0.2px black;
 }
 .playertitle{
   font-size: 35px;
   text-align: left;
-  color: red;
+  color: white;
   margin-top: 30px;
+  -webkit-text-stroke: 1px black;
+
 }
 .playerstyle{
   color: white;
