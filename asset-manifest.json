@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/cards-game-war/static/css/main.87a95b53.chunk.css",
+    "main.js": "/cards-game-war/static/js/main.058eca7a.chunk.js",
+    "main.js.map": "/cards-game-war/static/js/main.058eca7a.chunk.js.map",
+    "runtime-main.js": "/cards-game-war/static/js/runtime-main.cecb9240.js",
+    "runtime-main.js.map": "/cards-game-war/static/js/runtime-main.cecb9240.js.map",
+    "static/css/2.8c28660b.chunk.css": "/cards-game-war/static/css/2.8c28660b.chunk.css",
+    "static/js/2.8bc8a360.chunk.js": "/cards-game-war/static/js/2.8bc8a360.chunk.js",
+    "static/js/2.8bc8a360.chunk.js.map": "/cards-game-war/static/js/2.8bc8a360.chunk.js.map",
+    "index.html": "/cards-game-war/index.html",
+    "precache-manifest.bce78cad1d590769f37204f4c7276a73.js": "/cards-game-war/precache-manifest.bce78cad1d590769f37204f4c7276a73.js",
+    "service-worker.js": "/cards-game-war/service-worker.js",
+    "static/css/2.8c28660b.chunk.css.map": "/cards-game-war/static/css/2.8c28660b.chunk.css.map",
+    "static/css/main.87a95b53.chunk.css.map": "/cards-game-war/static/css/main.87a95b53.chunk.css.map",
+    "static/js/2.8bc8a360.chunk.js.LICENSE.txt": "/cards-game-war/static/js/2.8bc8a360.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cecb9240.js",
+    "static/css/2.8c28660b.chunk.css",
+    "static/js/2.8bc8a360.chunk.js",
+    "static/css/main.87a95b53.chunk.css",
+    "static/js/main.058eca7a.chunk.js"
+  ]
+}
